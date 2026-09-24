@@ -4,7 +4,7 @@
 **Lab:** Cross Platform App Development Lab (R5CO4004L)  
 **Experiment:** Experiment No. 4 — *Develop a Map Application Using Dart*  
 **Date:** 2026-09-24  
-**Total Contents:** 19 High-Resolution Screenshots + 2 Compiled Typst PDFs + Source Code + Reproducible Automation Pipeline
+**Total Contents:** 19 High-Resolution Screenshots + 2 Compiled PDFs + Full Flutter Source Code + Automation Pipeline
 
 ---
 
@@ -40,11 +40,6 @@ Lab04/
 │   │       └── marker_detail_sheet.dart                 # Modal Bottom Sheet Inspector
 │   ├── android/app/src/main/AndroidManifest.xml         # Android Permissions & Google Maps API Key
 │   └── pubspec.yaml                                     # Dependencies & Configuration
-├── typst/                                               # Typst Source Files & Templates
-│   ├── CpadLabAssignment04ChaitanyaShinde231070066.typ
-│   ├── CPAD_VivaPrep_Lab04_ChaitanyaShinde231070066.typ
-│   ├── GEMINI_new_typst_template.typ
-│   └── GEMINI_viva_template.typ
 ├── scripts/                                             # Reproducible Headless Test Rig & Pipelines
 │   ├── app_view.html                                    # Testbed Interface with Multi-State Logic
 │   ├── capture_screenshots.py                           # Automated Headless Chromium Pipeline
@@ -60,7 +55,7 @@ Lab04/
 
 1. **Platform View Integration:** Utilizes Texture Layer Hybrid Composition (TLHC) on Android and WebGL on Web via `google_maps_flutter` and `google_maps_flutter_web`.
 2. **Asynchronous Geolocation:** Integrates `geolocator` with runtime permission negotiation (`ACCESS_FINE_LOCATION`, `ACCESS_COARSE_LOCATION`), location timeouts, and distance filtering.
-3. **Camera Controllers:** Seamless animated perspective transitions (`animateCamera`) with zoom, pitch/tilt, and bearing.
+3. **Camera Controllers:** Smooth animated perspective transitions (`animateCamera`) with zoom, pitch/tilt, and bearing.
 4. **Rich Interactivity:** Custom color-coded `BitmapDescriptor` pins, anchored `InfoWindow` overlays, and modal bottom sheet inspectors with star ratings and coordinates.
 5. **Self-Proving Forensic Banners:** Every screenshot carries an automated in-frame yellow debug banner and black subsystem identification banner confirming dimensions, zoom level, and active mechanism.
 
@@ -74,10 +69,4 @@ python3 Lab04/scripts/render_code_appendix.py
 
 # 2. Capture live application screenshots
 python3 Lab04/scripts/capture_screenshots.py
-
-# 3. Compile main lab report PDF
-cd Lab04/typst && typst compile CpadLabAssignment04ChaitanyaShinde231070066.typ ../submissions/CpadLabAssignment04ChaitanyaShinde231070066.pdf
-
-# 4. Compile viva prep study guide PDF
-cd Lab04/typst && typst compile CPAD_VivaPrep_Lab04_ChaitanyaShinde231070066.typ ../submissions/CPAD_VivaPrep_Lab04_ChaitanyaShinde231070066.pdf
 ```

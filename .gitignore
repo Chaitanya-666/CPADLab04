@@ -1,3 +1,9 @@
+# Proprietary Typst theming, templates & generators
+typst/
+*.typ
+.private/
+
+# Python & system caches
 __pycache__/
 *.py[cod]
 *$py.class
